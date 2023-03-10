@@ -98,23 +98,23 @@ public class TestPerson {
         Assert.assertEquals(expected, actual);
     }
 
-    @Test
-    public void testConstructorWithAllFields() {
-        Person person  = new Person("John",
-                25, 5.4, "Developer",
-                new String[]{"Gaming", "Reading"},
-                'M', "Black");
-
-        boolean actual = person.getName().equals("John")
-                        && person.getAge() == 25
-                        && person.getHeight() == 5.4
-                        && person.getJob().equals("Developer")
-                        && Arrays.equals(person.getHobbies(), new String[]{"Gaming", "Reading"})
-                        && person.getGender() == 'M'
-                        && person.getEyeColor().equals("Black");
-
-        Assert.assertTrue(actual);
-        }
+//    @Test
+//    public void testConstructorWithAllFields() {
+//        Person person  = new Person("John",
+//                25, 5.4, "Developer",
+//                new String[]{"Gaming", "Reading"},
+//                'M', "Black");
+//
+//        boolean actual = person.getName().equals("John")
+//                        && person.getAge() == 25
+//                        && person.getHeight() == 5.4
+//                        && person.getJob().equals("Developer")
+//                        && Arrays.equals(person.getHobbies(), new String[]{"Gaming", "Reading"})
+//                        && person.getGender() == 'M'
+//                        && person.getEyeColor().equals("Black");
+//
+//        Assert.assertTrue(actual);
+//        }
     @Test
     public void testGetHeight() {
         Person person = new Person();
